@@ -4,21 +4,28 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
-import { Search, BookOpen, Plus, Filter } from 'lucide-react';
+import { Search, BookOpen, Filter } from 'lucide-react';
 import booksData from '@/data/books.json';
+import AddBookModal from '@/components/AddBookModal';
 
 const Books = () => {
+  const [books, setBooks] = useState(booksData);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
 
-  const categories = ['all', ...new Set(booksData.map(book => book.category))];
+  const categories = ['all', ...new Set(books.map(book => book.category))];
 
-  const filteredBooks = booksData.filter(book => {
+  const filteredBooks = books.filter(book => {
     const matchesSearch = book.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
                          book.author.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesCategory = selectedCategory === 'all' || book.category === selectedCategory;
     return matchesSearch && matchesCategory;
   });
+
+  const handleAddBook = (newBook: any) => {
+    setBooks(prev => [...prev, newBook]);
+    console.log('New book added:', newBook);
+  };
 
   return (
     <div className="space-y-8 animate-fade-in">
@@ -29,10 +36,7 @@ const Books = () => {
           </h1>
           <p className="text-gray-600 mt-2">Manage your library's book collection</p>
         </div>
-        <Button className="flex items-center space-x-2 bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 text-white shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
-          <Plus className="h-4 w-4" />
-          <span>Add New Book</span>
-        </Button>
+        <AddBookModal onAddBook={handleAddBook} />
       </div>
 
       {/* Search and Filter */}
