@@ -1,0 +1,58 @@
+
+[
+  {
+    "id": "1",
+    "name": "John Smith",
+    "email": "john.smith@college.edu",
+    "studentId": "CS2021001",
+    "department": "Computer Science",
+    "role": "student",
+    "phone": "555-0101",
+    "joinDate": "2021-09-01",
+    "status": "active"
+  },
+  {
+    "id": "2",
+    "name": "Emily Johnson",
+    "email": "emily.johnson@college.edu",
+    "studentId": "EE2021002",
+    "department": "Electrical Engineering",
+    "role": "student",
+    "phone": "555-0102",
+    "joinDate": "2021-09-01",
+    "status": "active"
+  },
+  {
+    "id": "3",
+    "name": "Michael Brown",
+    "email": "michael.brown@college.edu",
+    "studentId": "ME2020003",
+    "department": "Mechanical Engineering",
+    "role": "student",
+    "phone": "555-0103",
+    "joinDate": "2020-09-01",
+    "status": "active"
+  },
+  {
+    "id": "4",
+    "name": "Sarah Davis",
+    "email": "sarah.davis@college.edu",
+    "studentId": "LIB001",
+    "department": "Library",
+    "role": "librarian",
+    "phone": "555-0200",
+    "joinDate": "2018-08-15",
+    "status": "active"
+  },
+  {
+    "id": "5",
+    "name": "David Wilson",
+    "email": "david.wilson@college.edu",
+    "studentId": "CS2022004",
+    "department": "Computer Science",
+    "role": "student",
+    "phone": "555-0104",
+    "joinDate": "2022-09-01",
+    "status": "active"
+  }
+]

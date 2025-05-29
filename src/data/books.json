@@ -1,0 +1,75 @@
+
+[
+  {
+    "id": "1",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "isbn": "978-0-06-112008-4",
+    "category": "Fiction",
+    "publishYear": 1960,
+    "totalCopies": 5,
+    "availableCopies": 3,
+    "description": "A gripping tale of racial injustice and childhood innocence in the American South.",
+    "coverUrl": "/placeholder.svg"
+  },
+  {
+    "id": "2",
+    "title": "1984",
+    "author": "George Orwell",
+    "isbn": "978-0-452-28423-4",
+    "category": "Dystopian Fiction",
+    "publishYear": 1949,
+    "totalCopies": 4,
+    "availableCopies": 2,
+    "description": "A dystopian social science fiction novel about totalitarian control.",
+    "coverUrl": "/placeholder.svg"
+  },
+  {
+    "id": "3",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isbn": "978-0-7432-7356-5",
+    "category": "Classic Literature",
+    "publishYear": 1925,
+    "totalCopies": 3,
+    "availableCopies": 1,
+    "description": "A classic American novel about the Jazz Age and the American Dream.",
+    "coverUrl": "/placeholder.svg"
+  },
+  {
+    "id": "4",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "isbn": "978-0-7475-3269-9",
+    "category": "Fantasy",
+    "publishYear": 1997,
+    "totalCopies": 8,
+    "availableCopies": 5,
+    "description": "The first book in the magical Harry Potter series.",
+    "coverUrl": "/placeholder.svg"
+  },
+  {
+    "id": "5",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "isbn": "978-0-316-76948-0",
+    "category": "Coming-of-age Fiction",
+    "publishYear": 1951,
+    "totalCopies": 2,
+    "availableCopies": 0,
+    "description": "A controversial novel about teenage rebellion and alienation.",
+    "coverUrl": "/placeholder.svg"
+  },
+  {
+    "id": "6",
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "isbn": "978-0-14-143951-8",
+    "category": "Romance",
+    "publishYear": 1813,
+    "totalCopies": 4,
+    "availableCopies": 4,
+    "description": "A romantic novel about manners, marriage, and morality in Georgian England.",
+    "coverUrl": "/placeholder.svg"
+  }
+]

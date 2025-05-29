@@ -1,0 +1,53 @@
+
+[
+  {
+    "id": "1",
+    "bookId": "1",
+    "userId": "1",
+    "borrowDate": "2024-01-15",
+    "dueDate": "2024-02-15",
+    "returnDate": null,
+    "status": "borrowed",
+    "fine": 0
+  },
+  {
+    "id": "2",
+    "bookId": "2",
+    "userId": "2",
+    "borrowDate": "2024-01-10",
+    "dueDate": "2024-02-10",
+    "returnDate": "2024-02-08",
+    "status": "returned",
+    "fine": 0
+  },
+  {
+    "id": "3",
+    "bookId": "3",
+    "userId": "3",
+    "borrowDate": "2024-01-20",
+    "dueDate": "2024-02-20",
+    "returnDate": null,
+    "status": "borrowed",
+    "fine": 0
+  },
+  {
+    "id": "4",
+    "bookId": "5",
+    "userId": "1",
+    "borrowDate": "2024-01-05",
+    "dueDate": "2024-02-05",
+    "returnDate": null,
+    "status": "overdue",
+    "fine": 25
+  },
+  {
+    "id": "5",
+    "bookId": "5",
+    "userId": "5",
+    "borrowDate": "2024-01-12",
+    "dueDate": "2024-02-12",
+    "returnDate": null,
+    "status": "overdue",
+    "fine": 15
+  }
+]
