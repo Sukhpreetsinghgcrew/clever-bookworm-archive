@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { Search, BookOpen, Filter } from 'lucide-react';
 import booksData from '@/data/books.json';
 import AddBookModal from '@/components/AddBookModal';
+import BorrowBookModal from '@/components/BorrowBookModal';
 
 const Books = () => {
   const [books, setBooks] = useState(booksData);
@@ -25,6 +26,17 @@ const Books = () => {
   const handleAddBook = (newBook: any) => {
     setBooks(prev => [...prev, newBook]);
     console.log('New book added:', newBook);
+  };
+
+  const handleBorrowBook = (bookId: string, userId: string) => {
+    setBooks(prev => 
+      prev.map(book => 
+        book.id === bookId 
+          ? { ...book, availableCopies: book.availableCopies - 1 }
+          : book
+      )
+    );
+    console.log(`Book ${bookId} borrowed by user ${userId}`);
   };
 
   return (
@@ -98,10 +110,7 @@ const Books = () => {
                 <p className="text-sm text-gray-600 line-clamp-3 leading-relaxed">{book.description}</p>
               </div>
               <div className="flex gap-3 mt-6">
-                <Button size="sm" className="flex-1 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 shadow-md hover:shadow-lg transition-all duration-300">
-                  <BookOpen className="h-4 w-4 mr-2" />
-                  Borrow
-                </Button>
+                <BorrowBookModal book={book} onBorrow={handleBorrowBook} />
                 <Button size="sm" variant="outline" className="border-2 hover:bg-gray-50 transition-all duration-300 hover:scale-105">
                   Edit
                 </Button>
